@@ -7,26 +7,81 @@
     body {
       background-color: #b4d2ff;
       font-family: Arial, sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
       margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
     }
-    h1 {
-      color: #283c60;
-    }
-    p {
+
+    .container {
       background: white;
-      padding: 10px 20px;
+      width: 85%;
+      max-width: 1200px;
+      padding: 20px 40px;
+      margin: 20px 0;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #283c60;
+      margin-bottom: 20px;
+    }
+
+    .subtitle {
+      text-align: center;
+      font-size: 20px;
+      color: #444;
+      margin-bottom: 30px;
+    }
+
+    .post {
+      margin-bottom: 40px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .post h2 {
+      margin: 0 0 5px;
+      color: #333;
+    }
+
+    .date {
+      font-size: 0.9em;
+      color: #666;
+      margin-bottom: 10px;
+    }
+
+    .post p {
+      color: #444;
+      line-height: 1.6;
+    }
+
+    .post img {
+      max-width: 100%;
       border-radius: 8px;
-      border: 2px solid #96aacc;
+      margin-top: 10px;
     }
   </style>
 </head>
 <body>
-  <h1>🎉 GitHub Pages funcionando!</h1>
-  <p>Se você está vendo esta página, o deploy deu certo.</p>
+  <div class="container">
+    <h1>Generic Clicker Game</h1>
+    <div class="subtitle">Atualizações de desenvolvimento</div>
+
+    <!-- Colocar os posts aqui embaixo -->
+    <div class="post">
+      <h2>Primeira atualização!</h2>
+      <div class="date">13/09/2025 às 01h37</div>
+      <p>Olá pessoas! Decidi criar esse blog pra ir postando atualizações de desenvolvimento regulares, pois deixar vocês sem notícia alguma eu acho meio injusto da minha parte. A primeira novidade é que estou portando para Html, com o electron. Em resumo, estou portando para JavaScript. Abaixo tem uma imagem do meu VSCode pra provar que estou trabalhando. <p>
+      <img src="https://i.postimg.cc/zfLTCbmZ/image.png">
+      <p>O jogo continuará na versão alpha, "começando" de onde parei na 0.0.05. A atualização 0.0.06 será focada na correção dos milhares de bugs que tinham que eu só consegui arrumar eles com a reescrita total do código numa linguagem de programação diferente. Além disso, algumas mudanças visuais serão muito visiveis. Mas eu estou trabalhando pra esse jogo ficar do meu gosto, mas, conforme forem chegando novos jogadores com novas sugestões, o jogo progredirá mais rápido.</p>
+      <img src="https://i.postimg.cc/G3PGxnf2/image.png">
+      <p>Atualmente estou trabalhando num design menos estranho pro menu de controles. Diria que uns 10% do jogo anterior já foi portado. Muito obrigado pela leitura. Até breve!</p>
+    </div>
+
+
+  </div>
 </body>
 </html>
